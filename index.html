@@ -99,7 +99,7 @@
   }
   .project-info{flex:1;min-width:0}
   .project-name{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:4px}
-  .project-desc{font-size:13px;color:var(--ink-2);line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .project-desc{font-size:13px;color:var(--ink-2);line-height:1.45}
   .project-meta{font-size:11px;color:var(--muted);margin-top:5px;display:flex;align-items:center;gap:4px}
   .project-btn{
     flex-shrink:0;padding:9px 18px;border-radius:9px;
@@ -267,7 +267,7 @@
         </div>
         <div class="project-info">
           <div class="project-name">${repo.name}</div>
-          <div class="project-desc" title="${desc}">${desc}</div>
+          <div class="project-desc">${desc}</div>
           <div class="project-meta">
             <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor">
               <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm.5 4.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 .22.53l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.5 7.94V4.75z"/>

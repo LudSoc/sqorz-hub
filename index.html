@@ -207,6 +207,12 @@
 
   const GH_USER = 'ludsoc';
   const HUB_REPO = 'sqorz-hub';
+  const DISPLAY_NAMES = {
+    'sqorz-club':      'Sqorz · Stats Club',
+    'sqorz-head2head': 'Sqorz · Head to Head',
+    'sqorz-category':  'Sqorz · Stats Catégorie',
+    'sqorz-stats':     'Sqorz · Stats Pilote',
+  };
   const ICON_GRADIENTS = [
     'linear-gradient(135deg,#2e4158,#6a8caf)',
     'linear-gradient(135deg,#3f566f,#8aa6c2)',
@@ -274,7 +280,7 @@
           ${iconHtml}
         </div>
         <div class="project-info">
-          <div class="project-name">${repo.name}</div>
+          <div class="project-name">${DISPLAY_NAMES[repo.name] || repo.name}</div>
           <div class="project-desc">${desc}</div>
           <div class="project-meta">
             <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor">
